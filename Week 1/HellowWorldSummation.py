@@ -1,3 +1,8 @@
+#Ethan Coyle
+#CMPS4553-Computational Methods
+#Dr.StringFellow
+#8/28/2021 Homework 1 and 2
+
 ##this first portion is creating  a 
 # very simple hello world program
 print("hello world") #prints hello world

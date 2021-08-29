@@ -1,10 +1,12 @@
 ######################################################
-## Author:       Ethan Coyle                        ##
+##                                                  ##
+## Author    :    Ethan Coyle                       ##
 ## Instructor:    Dr StringFellow                   ##
 ## Class     :    CMPS 4553-Computational Methods   ##
 ## Class Time:    Tuesday,Thursday 9:30AM           ##
 ## Assignment:    Homework 1 and 2                  ##
 ## Due Date  :    Thursday September 2, 2021        ##
+##                                                  ##
 ######################################################
 
 # The purpose of this program is to create a simple 

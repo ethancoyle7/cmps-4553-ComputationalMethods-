@@ -12,14 +12,15 @@
 # two numbers
 
 ##Part 1 : Hello World
-print("Hello World")
+print("Hello World\n")
 
 
 #part 2: summation of 2 numbers
 
 #user input 2 numbers
-Num1 = input(" Please Enter the First Number: ")
-Num2 = input(" Please Enter the second number: ")
+print("Now we will sum 2 numbers\n")
+Num1 = input("Please Enter the First Number: ")
+Num2 = input("Please Enter the second number: ")
 
 # Using arithmetic + Operator to add two numbers
 #read in as a string and converted to int or else

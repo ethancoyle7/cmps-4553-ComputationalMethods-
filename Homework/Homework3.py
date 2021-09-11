@@ -31,18 +31,23 @@ deaths = [int(row[covidDeathsIndex]) for row in CsvFile[1:]]
 #and standard deviation using the module for age collum and the covid
 #death collum
 print ("mean\tstdev")
-print("{:.2f}".format(statistics.mean(ages)), "\t", "{:.2f}".format(statistics.stdev(ages), "\n\n"))
+print("{:.2f}".format(statistics.mean(ages)), "\t", 
+      "{:.2f}".format(statistics.stdev(ages), "\n\n"))
 
 ##now calculate the sum and find the mean of people death with covid
-DeathPerAge=[(float(row[ageIndex])*float(row[covidDeathsIndex])) for row in CsvFile[1:]]
+DeathPerAge=[(float(row[ageIndex])*float(row[covidDeathsIndex])) 
+  for row in CsvFile[1:]]
 TotDeaths=[float(row[covidDeathsIndex]) for row in CsvFile[1:]]
 MeanDeaths=sum(DeathPerAge)/sum(TotDeaths)
 
 #now for the standard deviation
 #StandDev=((float(ages)-[covidDeathsIndex])/(TotDeaths -1)).sqrt()
 
-RunningTot= [(((float(row[ageIndex])-MeanDeaths)**2)*float(row[covidDeathsIndex]))/(sum(TotDeaths)) for row in CsvFile[1:]]
-#take the deviation from each line create a running total and then divide by the sum of the total deaths and then we get our running total standard deviation
+RunningTot= [(((float(row[ageIndex])-MeanDeaths)**2)*float(row[covidDeathsIndex]))/
+        (sum(TotDeaths)) for row in CsvFile[1:]]
+#take the deviation from each line create a running total and then divide
+# by the sum of the total deaths and then we get our running
+# total standard deviation
 
 ##time to do our running total
 Col_length = len(RunningTot)

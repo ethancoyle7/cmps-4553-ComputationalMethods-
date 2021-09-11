@@ -1,0 +1,9 @@
+mean    stdev
+42.50    24.90
+
+Mean and Deviation for Covid Deaths
+------------------------------------
+
+mean         stdev
+----------------------
+73.50        12.43

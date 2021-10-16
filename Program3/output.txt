@@ -1,0 +1,38 @@
+C:\Users\ethan\PycharmProjects\sept13\venv\Scripts\python.exe C:/Users/ethan/PycharmProjects/sept13/main.py
+Our Head Displaying 10 is
+=============================================
+              2018 GDP Alcohol Consumption
+Country                                  
+libya       Above Avg           Below Avg
+rwanda      Above Avg           Below Avg
+ireland     Above Avg           Above Avg
+djibouti    Above Avg           Below Avg
+maldives    Above Avg           Below Avg
+bangladesh  Above Avg           Below Avg
+nepal       Above Avg           Below Avg
+tajikistan  Above Avg           Below Avg
+cambodia    Above Avg           Below Avg
+mongolia    Above Avg           Below Avg 
+
+Our Tail Displaying 10 is
+ ==========================================================
+                             2018 GDP Alcohol Consumption
+Country                                                 
+samoa                      Above Avg           Below Avg
+curacao                    Below Avg           Below Avg
+argentina                  Below Avg           Above Avg
+nicaragua                  Below Avg           Below Avg
+puerto rico                Below Avg           Below Avg
+congo, rep.                Below Avg           Below Avg
+iran, islamic rep.         Below Avg           Below Avg
+equatorial guinea          Below Avg           Below Avg
+sint maarten (dutch part)  Below Avg           Below Avg
+northern mariana islands   Below Avg           Below Avg
+
+
+The % of The Countries 
+That Were Equal Was 
+====================
+ 22.13%
+
+Process finished with exit code 0

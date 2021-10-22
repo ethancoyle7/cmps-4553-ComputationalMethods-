@@ -1,0 +1,20 @@
+Number of nodes is  8
+The nodes ae : [1, 2, 3, 4, 5, 6, 7, 8]
+The edges are : [(1, 2), (3, 4), (4, 5), (5, 8), (6, 7)]
+The degree of the Node  Five is: 2
+The Degrees of all the nodes are : [(1, 1), (2, 1), (3, 1), (4, 2), (5, 2), (6, 1), (7, 1), (8, 1)]
+the node with the highest degree is:              degree
+index_name        
+4                2
+Node 4 has neighbors: <dict_keyiterator object at 0x000002AFD1BE06D0>
+The Num of  all edges are  :  24
+The Degrees of the edges are [(1, 4), (2, 4), (3, 5), (4, 2), (5, 5), (6, 2), (7, 3), (8, 4), (9, 3), (10, 2), (11, 2), (12, 4), (13, 3), (14, 3), (15, 0), (0, 2)]
+The clustering vals  of all nodes are are : {1: 0.16666666666666666, 2: 0, 3: 0.1, 4: 0, 5: 0.1, 6: 0, 7: 0, 8: 0.16666666666666666, 9: 0, 10: 0, 11: 0, 12: 0.3333333333333333, 13: 0.3333333333333333, 14: 0.6666666666666666, 15: 0, 0: 0}
+The clustering value of all the nodes is: {1: 0.16666666666666666, 2: 0, 3: 0.1, 4: 0, 5: 0.1, 6: 0, 7: 0, 8: 0.16666666666666666, 9: 0, 10: 0, 11: 0, 12: 0.3333333333333333, 13: 0.3333333333333333, 14: 0.6666666666666666, 15: 0, 0: 0}
+
+The ELngths sof the subgraohs are :  [15, 1]
+The node with highest centrality is : 3
+The node with highest closeness centrality is : 1
+Our Cliques inside of our graphs is:
+ [[0, 1], [0, 13], [1, 8, 5], [1, 2], [2, 9], [2, 12], [2, 6], [3, 8], [3, 4], [3, 12, 14], [3, 7], [5, 10], [5, 4], [5, 7], [6, 7], [9, 10], [9, 11], [11, 8], [13, 12, 14], [15]]
+Our isolated Nodes are : <generator object isolates.<locals>.<genexpr> at 0x000002AFD1C18740>

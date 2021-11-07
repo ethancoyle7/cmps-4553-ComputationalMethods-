@@ -104,308 +104,70 @@ How= right
 4   5.0  Ayoung       sub5     5  Betty
 <module 'pandas' from '/opt/virtualenvs/python3/lib/python3.8/site-packages/pandas/__init__.py'>
            A         B         Tenant
-0  -0.115699 -0.725649          Frodo
-1  -0.914455 -1.503682  Sam the Brave
-2  -0.826156  0.513409          Frodo
-3  -1.553514  0.431305          Frodo
-4  -0.339689 -2.233520          Bilbo
-5  -1.788993 -0.662999          Bilbo
-6   0.563946  1.122379          Bilbo
-7  -1.125446  0.026741  Sam the Brave
-8   0.492006  1.810796          Bilbo
-9  -1.019889  0.996979          Bilbo
-10 -0.112459 -0.721508          Frodo
-11  0.573662 -1.926941          Frodo
-12 -0.331994 -0.123432          Bilbo
-13  1.532648 -1.795203          Frodo
-14 -0.917567 -0.148579          Frodo
-15 -0.211562  0.781267          Bilbo
-16  0.319090  1.037218          Bilbo
-17  0.613427 -0.765304          Bilbo
-18 -1.373831 -1.497947               
-19  0.988885 -0.517607          Bilbo
+0   1.182590 -0.760730               
+1  -0.746266  0.353543          Bilbo
+2  -0.781231  0.483903          Bilbo
+3   0.440766  0.396612          Bilbo
+4  -0.585954  0.042624  Sam the Brave
+5   1.071844 -0.264782          Bilbo
+6   0.981173 -0.202625          Bilbo
+7   0.770119 -0.862059               
+8   0.456042  1.539736               
+9   0.850921  1.142951          Bilbo
+10 -1.409810  3.022351          Bilbo
+11 -0.105847 -0.719998  Sam the Brave
+12  1.237463  0.228714  Sam the Brave
+13 -0.312851  1.063068          Bilbo
+14  0.767771 -0.956095          Bilbo
+15 -0.964910 -0.286459          Frodo
+16 -0.658998 -0.751022               
+17  0.163514  0.625850  Sam the Brave
+18  0.806066 -0.426265          Bilbo
+19 -0.706297  0.578839          Frodo
 
  We replace all the empty cells with np.nan
  To be able to drop the row with empyth cells
 
            A         B         Tenant
-0  -0.115699 -0.725649          Frodo
-1  -0.914455 -1.503682  Sam the Brave
-2  -0.826156  0.513409          Frodo
-3  -1.553514  0.431305          Frodo
-4  -0.339689 -2.233520          Bilbo
-5  -1.788993 -0.662999          Bilbo
-6   0.563946  1.122379          Bilbo
-7  -1.125446  0.026741  Sam the Brave
-8   0.492006  1.810796          Bilbo
-9  -1.019889  0.996979          Bilbo
-10 -0.112459 -0.721508          Frodo
-11  0.573662 -1.926941          Frodo
-12 -0.331994 -0.123432          Bilbo
-13  1.532648 -1.795203          Frodo
-14 -0.917567 -0.148579          Frodo
-15 -0.211562  0.781267          Bilbo
-16  0.319090  1.037218          Bilbo
-17  0.613427 -0.765304          Bilbo
-18 -1.373831 -1.497947            NaN
-19  0.988885 -0.517607          Bilbo
+0   1.182590 -0.760730            NaN
+1  -0.746266  0.353543          Bilbo
+2  -0.781231  0.483903          Bilbo
+3   0.440766  0.396612          Bilbo
+4  -0.585954  0.042624  Sam the Brave
+5   1.071844 -0.264782          Bilbo
+6   0.981173 -0.202625          Bilbo
+7   0.770119 -0.862059            NaN
+8   0.456042  1.539736            NaN
+9   0.850921  1.142951          Bilbo
+10 -1.409810  3.022351          Bilbo
+11 -0.105847 -0.719998  Sam the Brave
+12  1.237463  0.228714  Sam the Brave
+13 -0.312851  1.063068          Bilbo
+14  0.767771 -0.956095          Bilbo
+15 -0.964910 -0.286459          Frodo
+16 -0.658998 -0.751022            NaN
+17  0.163514  0.625850  Sam the Brave
+18  0.806066 -0.426265          Bilbo
+19 -0.706297  0.578839          Frodo
 
  With the dropped collumns :
             A         B         Tenant
-0  -0.115699 -0.725649          Frodo
-1  -0.914455 -1.503682  Sam the Brave
-2  -0.826156  0.513409          Frodo
-3  -1.553514  0.431305          Frodo
-4  -0.339689 -2.233520          Bilbo
-5  -1.788993 -0.662999          Bilbo
-6   0.563946  1.122379          Bilbo
-7  -1.125446  0.026741  Sam the Brave
-8   0.492006  1.810796          Bilbo
-9  -1.019889  0.996979          Bilbo
-10 -0.112459 -0.721508          Frodo
-11  0.573662 -1.926941          Frodo
-12 -0.331994 -0.123432          Bilbo
-13  1.532648 -1.795203          Frodo
-14 -0.917567 -0.148579          Frodo
-15 -0.211562  0.781267          Bilbo
-16  0.319090  1.037218          Bilbo
-17  0.613427 -0.765304          Bilbo
-19  0.988885 -0.517607          Bilbo
-
- Now we gonna demonstrate summing up rows and
-putting them in new collum
-
-main.py:102: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
-  df['Sum of Rows'] = df.sum(axis=1)
-
- With New Collum E to hold the sum of each row
-    Col A  Col B Col C  Col D  Sum of Rows
-0      1      2    dd      5            8
-1      2      3    ee      9           14
-2      3      4    ff      1            8
-
- We are now going to set the index display
-
-DataFrame with default index
-    rollno      name  physics  botony
-0      21     Bilbo       72      67
-1      23    Chinky       78      69
-2      32    chunky       74      56
-3      52  potatoes       54      76
-
-DataFrame with column as index
-             name  physics  botony
-rollno                           
-21         Bilbo       72      67
-23        Chinky       78      69
-32        chunky       74      56
-52      potatoes       54      76
-
- Here we gonna sort on the physics number :
-             name  physics  botony
-rollno                           
-52      potatoes       54      76
-21         Bilbo       72      67
-32        chunky       74      56
-23        Chinky       78      69
-
- Now we sorting on the roll number
-             name  physics  botony
-rollno                           
-21         Bilbo       72      67
-23        Chinky       78      69
-32        chunky       74      56
-52      potatoes       54      76
-main.py:130: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
-  df['Sum of Rows'] = df.sum(axis=1)
-
- With New Collum E to hold the sum of each row
-             name  physics  botony  Sum of Rows
-rollno                                        
-21         Bilbo       72      67          139
-23        Chinky       78      69          147
-32        chunky       74      56          130
-52      potatoes       54      76          130
-
-      Brand  Price  Year NumCarrots
-3      Audi  35000  2018        NaN
-2      Ford  12000  2018        NaN
-0   Hyundai  22000  2015        NaN
-4  Mercedes  90000  2003        NaN
-1    Toyots  25000  2013        NaN
-      Brand  Price  Year NumCarrots
-3      Audi  35000  2018        NaN
-2      Ford  12000  2018        NaN
-0   Hyundai  22000  2015        NaN
-4  Mercedes  90000  2003        NaN
-1    Toyots  25000  2013        NaN
-      Brand  Price  Year NumCarrots
-2      Ford  12000  2018        NaN
-0   Hyundai  22000  2015        NaN
-1    Toyots  25000  2013        NaN
-3      Audi  35000  2018        NaN
-4  Mercedes  90000  2003        NaN
- Now we gonna cut into bins the result list and label them  on their price point 
-
- Here is our orignal list
-       Brand  Price  Year NumCarrots
-2      Ford  12000  2018        NaN
-0   Hyundai  22000  2015        NaN
-1    Toyots  25000  2013        NaN
-3      Audi  35000  2018        NaN
-4  Mercedes  90000  2003        NaN 
-
-
- And here is out cut and bin of the price point
-
-
-2           Medium
-0          Average
-1          Average
-3          Average
-4    too Expensive
-Name: Price, dtype: category
-Categories (4, object): ['Low' < 'Medium' < 'Average' < 'too Expensive']
-2      fancy
-0       junk
-1       junk
-3      fancy
-4    clunker
-Name: Year, dtype: category
-Categories (4, object): ['clunker', 'semiclunker', 'junk', 'fancy'] 
-
-
-1    c
-2    b
-3    a
-4    d
-dtype: object
-
- Our Data Fram before filling in the nan value is : 
-      A    B   C  D
-0  NaN  2.0 NaN  0
-1  3.0  4.0 NaN  1
-2  NaN  NaN NaN  5
-3  NaN  3.0 NaN  4 
-And after the fill 
-
-
-     A    B    C  D
-0  1.0  2.0  1.0  0
-1  3.0  4.0  1.0  1
-2  1.0  1.0  1.0  5
-3  1.0  3.0  1.0  4
-
- Now We gonna show merging
-
-
-First Data Fram is 
-    id   Name subject_id
-0   1  Billy       sub2
-1   2  Brian       sub4
-2   3   Bran       sub3
-3   4  Bryce       sub6
-4   5  Betty       sub5
-
-Second Data Fram is : 
-    id    Name subject_id
-0   1    Alex       sub1
-1   2     Amy       sub2
-2   3   Allen       sub4
-3   4   Alice       sub6
-4   5  Ayoung       sub5
-
- Now merged on id 
-
-
-   id  Name_x subject_id_x Name_y subject_id_y
-0   1    Alex         sub1  Billy         sub2
-1   2     Amy         sub2  Brian         sub4
-2   3   Allen         sub4   Bran         sub3
-3   4   Alice         sub6  Bryce         sub6
-4   5  Ayoung         sub5  Betty         sub5
-   id_x  Name_x subject_id  id_y Name_y
-0     1    Alex       sub1   NaN    NaN
-1     2     Amy       sub2   1.0  Billy
-2     3   Allen       sub4   2.0  Brian
-3     4   Alice       sub6   4.0  Bryce
-4     5  Ayoung       sub5   5.0  Betty
-How= right
-    id_x  Name_x subject_id  id_y Name_y
-0   2.0     Amy       sub2     1  Billy
-1   3.0   Allen       sub4     2  Brian
-2   NaN     NaN       sub3     3   Bran
-3   4.0   Alice       sub6     4  Bryce
-4   5.0  Ayoung       sub5     5  Betty
-<module 'pandas' from '/opt/virtualenvs/python3/lib/python3.8/site-packages/pandas/__init__.py'>
-           A         B         Tenant
-0  -0.602053  0.494200          Bilbo
-1   1.208540 -1.766171  Sam the Brave
-2  -0.282161  0.783843  Sam the Brave
-3   0.203974  2.013701          Bilbo
-4   1.080176 -0.357294  Sam the Brave
-5   0.131747  1.281583  Sam the Brave
-6  -0.352979  1.439553          Bilbo
-7  -0.788001  0.227533          Frodo
-8   0.543537  1.687801          Bilbo
-9  -0.058078  0.931419          Frodo
-10 -0.549713 -0.295955          Bilbo
-11 -1.124404 -1.191490          Bilbo
-12 -0.737492  0.232559  Sam the Brave
-13  1.209186  0.311030               
-14 -0.877494 -0.381774          Bilbo
-15 -0.448302  0.345900          Frodo
-16 -1.039279 -1.496889  Sam the Brave
-17 -1.502681  0.583067          Bilbo
-18 -1.390684 -0.407058          Bilbo
-19 -1.670883  0.094202          Bilbo
-
- We replace all the empty cells with np.nan
- To be able to drop the row with empyth cells
-
-           A         B         Tenant
-0  -0.602053  0.494200          Bilbo
-1   1.208540 -1.766171  Sam the Brave
-2  -0.282161  0.783843  Sam the Brave
-3   0.203974  2.013701          Bilbo
-4   1.080176 -0.357294  Sam the Brave
-5   0.131747  1.281583  Sam the Brave
-6  -0.352979  1.439553          Bilbo
-7  -0.788001  0.227533          Frodo
-8   0.543537  1.687801          Bilbo
-9  -0.058078  0.931419          Frodo
-10 -0.549713 -0.295955          Bilbo
-11 -1.124404 -1.191490          Bilbo
-12 -0.737492  0.232559  Sam the Brave
-13  1.209186  0.311030            NaN
-14 -0.877494 -0.381774          Bilbo
-15 -0.448302  0.345900          Frodo
-16 -1.039279 -1.496889  Sam the Brave
-17 -1.502681  0.583067          Bilbo
-18 -1.390684 -0.407058          Bilbo
-19 -1.670883  0.094202          Bilbo
-
- With the dropped collumns :
-            A         B         Tenant
-0  -0.602053  0.494200          Bilbo
-1   1.208540 -1.766171  Sam the Brave
-2  -0.282161  0.783843  Sam the Brave
-3   0.203974  2.013701          Bilbo
-4   1.080176 -0.357294  Sam the Brave
-5   0.131747  1.281583  Sam the Brave
-6  -0.352979  1.439553          Bilbo
-7  -0.788001  0.227533          Frodo
-8   0.543537  1.687801          Bilbo
-9  -0.058078  0.931419          Frodo
-10 -0.549713 -0.295955          Bilbo
-11 -1.124404 -1.191490          Bilbo
-12 -0.737492  0.232559  Sam the Brave
-14 -0.877494 -0.381774          Bilbo
-15 -0.448302  0.345900          Frodo
-16 -1.039279 -1.496889  Sam the Brave
-17 -1.502681  0.583067          Bilbo
-18 -1.390684 -0.407058          Bilbo
-19 -1.670883  0.094202          Bilbo
+1  -0.746266  0.353543          Bilbo
+2  -0.781231  0.483903          Bilbo
+3   0.440766  0.396612          Bilbo
+4  -0.585954  0.042624  Sam the Brave
+5   1.071844 -0.264782          Bilbo
+6   0.981173 -0.202625          Bilbo
+9   0.850921  1.142951          Bilbo
+10 -1.409810  3.022351          Bilbo
+11 -0.105847 -0.719998  Sam the Brave
+12  1.237463  0.228714  Sam the Brave
+13 -0.312851  1.063068          Bilbo
+14  0.767771 -0.956095          Bilbo
+15 -0.964910 -0.286459          Frodo
+17  0.163514  0.625850  Sam the Brave
+18  0.806066 -0.426265          Bilbo
+19 -0.706297  0.578839          Frodo
 
  Now we gonna demonstrate summing up rows and
 putting them in new collum

@@ -1,0 +1,83 @@
+Python 3.8.2 (default, Feb 26 2020, 02:56:10)
+Matplotlib created a temporary config/cache directory at /tmp/
+matplotlib-hvqeprv0 because the default path (/config/matplotlib)
+ is not a writable directory; it is highly recommended to set the
+ MPLCONFIGDIR environment variable to a writable directory, in 
+ particular to speed up the import of Matplotlib and to better 
+ support multiprocessing.
+          States         2010  ...         2018         2019
+0  United States  309321666.0  ...  326687501.0  328239523.0
+1        Alabama    4785437.0  ...    4887681.0    4903185.0
+2         Alaska     713910.0  ...     735139.0     731545.0
+3        Arizona    6407172.0  ...    7158024.0    7278717.0
+4       Arkansas    2921964.0  ...    3009733.0    3017804.0
+
+[5 rows x 11 columns]
+           States         2010  ...         2018         2019
+0   United States  309321666.0  ...  326687501.0  328239523.0
+44          Texas   25241971.0  ...   28628666.0   28995881.0
+
+[2 rows x 11 columns]
+               0           44
+2010  309321666.0  25241971.0
+2011  311556874.0  25645629.0
+2012  313830990.0  26084481.0
+2013  315993715.0  26480266.0
+2014  318301008.0  26964333.0
+2015  320635163.0  27470056.0
+2016  322941311.0  27914410.0
+2017  324985539.0  28295273.0
+2018  326687501.0  28628666.0
+Matplotlib created a temporary config/cache directory at /tmp/
+matplotlib-vz0sjj1t because the default path (/config/matplotlib)
+ is not a writable directory; it is highly recommended to set the
+ MPLCONFIGDIR environment variable to a writable directory, in 
+ particular to speed up the import of Matplotlib and to better
+ support multiprocessing.
+          States         2010  ...         2018         2019
+0  United States  309321666.0  ...  326687501.0  328239523.0
+1        Alabama    4785437.0  ...    4887681.0    4903185.0
+2         Alaska     713910.0  ...     735139.0     731545.0
+3        Arizona    6407172.0  ...    7158024.0    7278717.0
+4       Arkansas    2921964.0  ...    3009733.0    3017804.0
+
+[5 rows x 11 columns]
+           States         2010  ...         2018         2019
+0   United States  309321666.0  ...  326687501.0  328239523.0
+44          Texas   25241971.0  ...   28628666.0   28995881.0
+
+[2 rows x 11 columns]
+               0           44
+2010  309321666.0  25241971.0
+2011  311556874.0  25645629.0
+2012  313830990.0  26084481.0
+2013  315993715.0  26480266.0
+2014  318301008.0  26964333.0
+2015  320635163.0  27470056.0
+2016  322941311.0  27914410.0
+2017  324985539.0  28295273.0
+2018  326687501.0  28628666.0
+2019  328239523.0  28995881.0
+     United States       Texas
+2010   309321666.0  25241971.0
+2011   311556874.0  25645629.0
+2012   313830990.0  26084481.0
+2013   315993715.0  26480266.0
+2014   318301008.0  26964333.0
+2015   320635163.0  27470056.0
+2016   322941311.0  27914410.0
+2017   324985539.0  28295273.0
+2018   326687501.0  28628666.0
+2019   328239523.0  28995881.0
+     United States       Texas PopulationChange
+2010   309321666.0  25241971.0         0.081604
+2011   311556874.0  25645629.0         0.082314
+2012   313830990.0  26084481.0         0.083116
+2013   315993715.0  26480266.0           0.0838
+2014   318301008.0  26964333.0         0.084713
+2015   320635163.0  27470056.0         0.085674
+2016   322941311.0  27914410.0         0.086438
+2017   324985539.0  28295273.0         0.087066
+2018   326687501.0  28628666.0         0.087633
+2019   328239523.0  28995881.0         0.088338
+ 

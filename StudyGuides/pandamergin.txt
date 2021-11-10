@@ -1,0 +1,598 @@
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese        
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing   
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      F
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      FavFood Eats Cheese?
+3   id004          Byron             Dowling     Brocolli          yes
+0   id001          Ethan               Coyle       Cheese          Yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+ Now Merged Right we get :
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      FavFood Eats Cheese?
+3   id004          Byron             Dowling     Brocolli          yes
+0   id001          Ethan               Coyle       Cheese          Yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+ Now Merged Right we get :
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Now we gonna show outter left merging Indicator will say is found in one or both
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      FavFood Eats Cheese?
+3   id004          Byron             Dowling     Brocolli          yes
+0   id001          Ethan               Coyle       Cheese          Yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+ Now Merged Right we get :
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Now we gonna show outter left merging Indicator will say is found in one or both
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      FavFood Eats Cheese?
+3   id004          Byron             Dowling     Brocolli          yes
+0   id001          Ethan               Coyle       Cheese          Yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+ Now Merged Right we get :
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Now we gonna show outter left merging Indicator will say is found in one or both
+:   user_id           Name  ... Eats Cheese?     _merge
+0   id001          Ethan  ...          Yes       both
+1   id002       Jonathan  ...          yes       both
+2   id003           Loic  ...           no       both
+3   id004          Byron  ...          yes       both
+4   id005          Fowzy  ...     brocolli       both
+5   id006         Paxton  ...          NaN  left_only
+6   id007  Sam the Brave  ...          NaN  left_only
+
+[7 rows x 6 columns]
+ Now printing outter as how: and indicator to see where what appears:
+   user_id           Name  ... Eats Cheese?     _merge
+0   id001          Ethan  ...          Yes      
+our first data frame is :
+   user_id           Name               LName      FavFood
+0   id001          Ethan               Coyle       Cheese
+1   id002       Jonathan               Hogan      Potatoe
+2   id003           Loic               Konan       Celery
+3   id004          Byron             Dowling     Brocolli
+4   id005          Fowzy         The Slacker      Slacing
+5   id006         Paxton             Proctor  Chees Curds
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters
+
+Our second data frame is :
+   user_id Eats Cheese?
+0   id001          Yes
+1   id002          yes
+2   id003           no
+3   id004          yes
+4   id005     brocolli
+ Here we merging except merges all identical:
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+
+Data frame 4 merged left
+
+ Here merging left, will merge all the rows together so anything from both data frams will be together and anything not matching in the collumns will be replaced witha Nan value
+
+   user_id           Name               LName      FavFood Eats Cheese?
+0   id001          Ethan               Coyle       Cheese          Yes
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+3   id004          Byron             Dowling     Brocolli          yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+
+
+Now sorted on the names:
+   user_id           Name               LName      FavFood Eats Cheese?
+3   id004          Byron             Dowling     Brocolli          yes
+0   id001          Ethan               Coyle       Cheese          Yes
+4   id005          Fowzy         The Slacker      Slacing     brocolli
+1   id002       Jonathan               Hogan      Potatoe          yes
+2   id003           Loic               Konan       Celery           no
+5   id006         Paxton             Proctor  Chees Curds          NaN
+6   id007  Sam the Brave  Avid Potatoe Lover       Taters          NaN
+ Now Merged Right we get :
+   user_id      Name        LName   FavFood Eats Cheese?
+0   id001     Ethan        Coyle    Cheese          Yes
+1   id002  Jonathan        Hogan   Potatoe          yes
+2   id003      Loic        Konan    Celery           no
+3   id004     Byron      Dowling  Brocolli          yes
+4   id005     Fowzy  The Slacker   Slacing     brocolli
+ Now we gonna show outter left merging Indicator will say is found in one or both
+:   user_id           Name  ... Eats Cheese?     _merge
+0   id001          Ethan  ...          Yes       both
+1   id002       Jonathan  ...          yes       both
+2   id003           Loic  ...           no       both
+3   id004          Byron  ...          yes       both
+4   id005          Fowzy  ...     brocolli       both
+5   id006         Paxton  ...          NaN  left_only
+6   id007  Sam the Brave  ...          NaN  left_only
+
+[7 rows x 6 columns]
+ Now printing outter as how: and indicator to see where what appears:
+   user_id           Name  ... Eats Cheese?     _merge
+0   id001          Ethan  ...          Yes       both
+1   id002       Jonathan  ...          yes       both
+2   id003           Loic  ...           no       both
+3   id004          Byron  ...          yes       both
+4   id005          Fowzy  ...     brocolli       both
+5   id006         Paxton  ...          NaN  left_only
+6   id007  Sam the Brave  ...          NaN  left_only
+
+[7 rows x 6 columns]
+Now we gonna see the inner
+:   user_id      Name        LName   FavFood Eats Cheese? _merge
+0   id001     Ethan        Coyle    Cheese          Yes   both
+1   id002  Jonathan        Hogan   Potatoe          yes   both
+2   id003      Loic        Konan    Celery           no   both
+3   id004     Byron      Dowling  Brocolli          yes   both
+4   id005     Fowzy  The Slacker   Slacing     brocolli   both

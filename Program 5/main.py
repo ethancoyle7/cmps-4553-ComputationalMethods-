@@ -38,6 +38,8 @@ C_simp = (H/3) * (f[0] + 2*sum(f[:N-2:2]) \
             + 4*sum(f[1:N-1:2]) + f[N-1])
 # display the intervals over intervals and then the 
 # approximated simson value
+
+
 print ("\r\nIntegral of f(x) = (x+1)^-1 on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. (x+1)^-1 is  :  1.099")
@@ -60,7 +62,7 @@ axis[0, 0].set_title("(x+1)^-1")
 #plt.axis([0, 2, 0, 1])
 plt.axis([0, 5, 0, 10])
 # copy and pasting the data to reinitialize with the next test 
-# function for simson rule this one is x^4
+#function for simson rule this one is x^4
 # only difference in this one is rename the f to Function2 to
 # show that is is the second test not necessary beacuse once
 #initialized, python will voerride the values accoringly 
@@ -87,8 +89,6 @@ axis[0,1].plot(X_Function,Y_Function,color='b')
 axis[0, 1].scatter(x, Function2,s=11)
 axis[0, 1].set_title("(x^4)")
 
-
-
 # We now are going to figure out the 3rd function
 # using simsons rule (x^2)
 
@@ -111,7 +111,6 @@ axis[1, 0].scatter(x, Function3,s=10)
 axis[1, 0].set_title("(x^2)")
 # plot the graph and set the title, this will go in the bottom left corner graph
 
-
 # now for the fourth and final one
 # e^x for scalar 
 # to do our calculation and assign this value to the new f
@@ -120,7 +119,7 @@ Function4= np.exp(x)
 # calculate then graph in the lower right corner
 C_simp = (H/3) * (Function4[0] + 2*sum(Function4[:N-2:2]) \
             + 4*sum(Function4[1:N-1:2]) + Function4[N-1])
-print ("\r\nIntegral of f(x) = (x^2) on intvl [", A, ",", B, "]")
+print ("\r\nIntegral of f(x) = (e^x) on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. e^x is  :  6.389")
 print("Our Calc. using S.R of  e^x is  : " ,C_simp)

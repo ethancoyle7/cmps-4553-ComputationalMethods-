@@ -32,6 +32,8 @@ H = (B - A) / (N - 1)
 x = np.linspace(A, B, N)
 # the f is equal to (x+1)^-1
 f= (x+1)**-1
+
+Y_Function=(x+1)**-1
 C_simp = (H/3) * (f[0] + 2*sum(f[:N-2:2]) \
             + 4*sum(f[1:N-1:2]) + f[N-1])
 # display the intervals over intervals and then the 
@@ -45,13 +47,25 @@ print("Our Calc. using S.R of  (x+1)^-1 is  : " ,C_simp)
 figure, axis = plt.subplots(2,2)
 # we now going to plot the composite simson rule calulation
 # over the intervals with "ro" in ggplot for red dots
-axis[0, 0].plot(x, f,'ro')
+axis
+
+# we graph the function by itself using line 
+# initialize hat it is and then sub in the value x for it and 
+# then print in the subgraph corresponding to the plotting
+# thus we have side by side comparison
+X_Function = np.linspace(A, B, 100)
+Y_Function=(X_Function+1)**-1 # takes the same function but this time we graphing
+
+axis[0, 0].scatter(x, f,s=10)
+axis[0,0].plot(X_Function,Y_Function, color='b')
 axis[0, 0].set_title("(x+1)^-1")
 #plt.axis([0, 2, 0, 1])
 plt.axis([0, 5, 0, 10])
-# copy and pasting the data to reinitialize with the next test function for simson rule this one is x^4
+# copy and pasting the data to reinitialize with the next test 
+#function for simson rule this one is x^4
 # only difference in this one is rename the f to f2 to
-# show that is is the second test not necessary beacuse once initialized, python will voerride the values accoringly 
+# show that is is the second test not necessary beacuse once
+#initialized, python will voerride the values accoringly 
 # but just give better understanding to know whats going on
 # the setup is the exact same
 
@@ -65,7 +79,14 @@ print("The exact value of S.R. x^4 is  :  6.400")
 print("Our Calc. using S.R of  x^4 is  : " ,C_simp)
 # we now going to plot the composite simson rule calulation
 # over the intervals with "ro" in ggplot for red dots
-axis[0, 1].plot(x, f2,'ro')
+X_Function = np.linspace(A, B, 100)
+Y_Function=X_Function**4 # takes the same function but this time we graphing
+axis[0,1].plot(X_Function,Y_Function,color='b')
+
+# print out the scatter plot and then the line plot for the function 
+# the line plot will plot the actual function and the 
+# scatter plot will plot our alloted ammount 
+axis[0, 1].scatter(x, f2,s=11)
 axis[0, 1].set_title("(x^4)")
 
 # just for fun, we are going to plot 4 different tests to fill up one graph figure 
@@ -81,7 +102,10 @@ print("The exact value of S.R. x^2 is  :  2.667")
 print("Our Calc. using S.R of  x^2 is  : " ,C_simp)
 # we now going to plot the composite simson rule calulation
 # over the intervals with "ro" in ggplot for red dots
-axis[1, 0].plot(x, f3,'ro')
+X_Function = np.linspace(A, B, 100)
+Y_Function=X_Function**2 # takes the same function but this time we graphing
+axis[1,0].plot(X_Function,Y_Function,color='b')
+axis[1, 0].scatter(x, f3,s=10)
 axis[1, 0].set_title("(x^2)")
 # plot the graph and set the title, this will go in the bottom left corner graph
 
@@ -100,9 +124,14 @@ print("Our Calc. using S.R of  e^x is  : " ,C_simp)
 # we now going to plot the composite simson rule calulation
 # over the intervals with "ro" in ggplot for red dots
 
-axis[1, 1].plot(x, f4,'ro')
+X_Function = np.linspace(A, B, 100)
+Y_Function= np.exp(X_Function)# takes the same function but this time we graphing
+axis[1,1].plot(X_Function,Y_Function,color='b')
+# plot the line plot and then the actual function plot with
+# scatter plotting
+axis[1, 1].scatter(x, f4,s=10)
 axis[1, 1].set_title("(e^x")
-# this graph looks very very aweful there is only one dot that shows up and 
+# this graph looks very very aweful there is only one dot that shows up and
 #it looks like the top left the red dots shows there but the calculation is correct
 
 # plot all four graphs inside of the subgraph output

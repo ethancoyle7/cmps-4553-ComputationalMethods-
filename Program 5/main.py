@@ -38,8 +38,6 @@ C_simp = (H/3) * (f[0] + 2*sum(f[:N-2:2]) \
             + 4*sum(f[1:N-1:2]) + f[N-1])
 # display the intervals over intervals and then the 
 # approximated simson value
-
-
 print ("\r\nIntegral of f(x) = (x+1)^-1 on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. (x+1)^-1 is  :  1.099")
@@ -62,18 +60,18 @@ axis[0, 0].set_title("(x+1)^-1")
 #plt.axis([0, 2, 0, 1])
 plt.axis([0, 5, 0, 10])
 # copy and pasting the data to reinitialize with the next test 
-#function for simson rule this one is x^4
-# only difference in this one is rename the f to f2 to
+# function for simson rule this one is x^4
+# only difference in this one is rename the f to Function2 to
 # show that is is the second test not necessary beacuse once
 #initialized, python will voerride the values accoringly 
 # but just give better understanding to know whats going on
 # the setup is the exact same
 
 # the new f is equal to (x^4)
-f2= x**4
-C_simp = (H/3) * (f2[0] + 2*sum(f2[:N-2:2]) \
-            + 4*sum(f2[1:N-1:2]) + f2[N-1])
-print ("\r\nIntegral of f(x) = (x+1)^-1 on intvl [", A, ",", B, "]")
+Function2= x**4
+C_simp = (H/3) * (Function2[0] + 2*sum(Function2[:N-2:2]) \
+            + 4*sum(Function2[1:N-1:2]) + Function2[N-1])
+print ("\r\nIntegral of f(x) = (x^4) on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. x^4 is  :  6.400")
 print("Our Calc. using S.R of  x^4 is  : " ,C_simp)
@@ -86,16 +84,20 @@ axis[0,1].plot(X_Function,Y_Function,color='b')
 # print out the scatter plot and then the line plot for the function 
 # the line plot will plot the actual function and the 
 # scatter plot will plot our alloted ammount 
-axis[0, 1].scatter(x, f2,s=11)
+axis[0, 1].scatter(x, Function2,s=11)
 axis[0, 1].set_title("(x^4)")
 
-# just for fun, we are going to plot 4 different tests to fill up one graph figure 
-# copy the values two more times, set up is similar only for 
-# reader better understanding the f will increment by one for the others as well
-# demonstrating (x^2)
-f3= x**2
-C_simp = (H/3) * (f3[0] + 2*sum(f3[:N-2:2]) \
-            + 4*sum(f3[1:N-1:2]) + f3[N-1])
+
+
+# We now are going to figure out the 3rd function
+# using simsons rule (x^2)
+
+# declare the function
+Function3= x**2
+# calculate simsoms rule on the function
+C_simp = (H/3) * (Function3[0] + 2*sum(Function3[:N-2:2]) \
+            + 4*sum(Function3[1:N-1:2]) + Function3[N-1])
+# now we find out how close our calculation is 
 print ("\r\nIntegral of f(x) = (x^2) on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. x^2 is  :  2.667")
@@ -105,18 +107,19 @@ print("Our Calc. using S.R of  x^2 is  : " ,C_simp)
 X_Function = np.linspace(A, B, 100)
 Y_Function=X_Function**2 # takes the same function but this time we graphing
 axis[1,0].plot(X_Function,Y_Function,color='b')
-axis[1, 0].scatter(x, f3,s=10)
+axis[1, 0].scatter(x, Function3,s=10)
 axis[1, 0].set_title("(x^2)")
 # plot the graph and set the title, this will go in the bottom left corner graph
+
 
 # now for the fourth and final one
 # e^x for scalar 
 # to do our calculation and assign this value to the new f
-f4= np.exp(x)
+Function4= np.exp(x)
 # simsons rule with the f replace with new f value
 # calculate then graph in the lower right corner
-C_simp = (H/3) * (f4[0] + 2*sum(f4[:N-2:2]) \
-            + 4*sum(f4[1:N-1:2]) + f4[N-1])
+C_simp = (H/3) * (Function4[0] + 2*sum(Function4[:N-2:2]) \
+            + 4*sum(Function4[1:N-1:2]) + Function4[N-1])
 print ("\r\nIntegral of f(x) = (x^2) on intvl [", A, ",", B, "]")
 print("---------------------------------------------------")
 print("The exact value of S.R. e^x is  :  6.389")
@@ -129,7 +132,7 @@ Y_Function= np.exp(X_Function)# takes the same function but this time we graphin
 axis[1,1].plot(X_Function,Y_Function,color='b')
 # plot the line plot and then the actual function plot with
 # scatter plotting
-axis[1, 1].scatter(x, f4,s=10)
+axis[1, 1].scatter(x, Function4,s=10)
 axis[1, 1].set_title("(e^x")
 # this graph looks very very aweful there is only one dot that shows up and
 #it looks like the top left the red dots shows there but the calculation is correct

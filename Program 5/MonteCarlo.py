@@ -1,5 +1,4 @@
 from random import random as rand
-
 import numpy as np
 import matplotlib, matplotlib.pyplot as plt
 
@@ -75,7 +74,7 @@ for i in range (N):
 print("\r\nTesing Case for (x^2)")
 print("====================================" )
 print ("Esimate of (x^2) is : ", 4*count/N)
-print ("The Actual Value is     : ", 2.667)
+print ("The Actual Value is : ", 2.667)
 
 # for our subplots
 
@@ -116,8 +115,8 @@ for i in range (N):
 # conclusion for this test case is the more number of values we have, approximately a .14 gap
 print("\r\nTesing Case for (x^4)")
 print("====================================" )
-print ("Esimate of (x^4) is : ", 4*count/N)
-print ("The Actual Value is     : ",6.400 )
+print ("Esimate of (x^4) is : ", 8*count/N)
+print ("The Actual Value is : ",6.400 )
 
 # for our subplots
 
@@ -133,45 +132,6 @@ axis[1, 0].plot(x2, f2,  color='b') # <--- pass ax=ax here
 # now copy and past for each test case uni
 
 
-# reset the values and empty the list to start again
-# next values 
-N = 5000
-#initialize count of points inside
-count = 0
-#select good looking plot sorted
-xlist = np.empty((0, 0))
-ylist = np.empty((0, 0))
-
-for i in range (N):
-  x= rand()
-  y= rand()
-  y_value= 1-y+np.exp(x)
-  if y_value<1: 
-    count += 1
-
-  xlist = np.append(xlist, x)
-  ylist = np.append(ylist, y)
-
-#Print out the calculation of the y value  using the random digits
-# print out the actual value
-# conclusion for this test case is the more number of values we have, approximately a .14 gap
-print("\r\nTesing Case for (e^x)")
-print("====================================" )
-print ("Esimate of (e^x) is : ", 4*count/N)
-print ("The Actual Value is     : ",6.389 )
-
-# for our subplots
-
-#plot the random numbers in graph
-axis[1, 1].scatter(xlist, ylist, s=2)
-
-f2 = np.empty((0,0))
-x2 = np.linspace(0, 1, 100)
-for x in x2:
-  f2 = np.append (f2, np.exp(x))
-# plotting the actual graph
-axis[1, 1].plot(x2, f2,  color='b') # <--- pass ax=ax here
-# now copy and past for each test case uni
 
 
 plt.savefig("RandomValues.pdf")

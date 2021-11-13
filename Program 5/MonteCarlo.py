@@ -1,3 +1,26 @@
+#================================================#
+#                                                #
+# Author- Ethan Coyle                            #
+# Inst-   Dr. StringFellow                       #
+# Class - CMPS 4553 Computational Methods        #
+# Prog  - Program 5 part 2                       #
+#                                                #
+# in this program, we are implementing the       #
+# following equations  using matplotlib  to plot #
+# and guestimate the  value of the alotte        #
+# equations compared against the actual value and#
+# plot the scatter dots and the actual line of   #
+# the curve                                      #
+#================================================#
+# The equations computed are stated below        #
+#                                                #
+# 1. (x+1)^-1                                    #
+# 2. x^4                                         #
+# 3. X^2                                         #
+#================================================#
+
+
+
 from random import random as rand
 import numpy as np
 import matplotlib, matplotlib.pyplot as plt
@@ -26,7 +49,8 @@ for i in range (N):
 
 #Print out the calculation of the y value  using the random digits
 # print out the actual value
-# conclusion for this test case is the more number of values we have, approximately a .14 gap
+# conclusion for this test case is the more number o
+#f values we have, approximately a .14 gap
 print("\r\nTesing Case for (x+1)**-1")
 print("====================================" )
 print ("Esimate of (x+1)**-1 is : ", 4*count/N)
@@ -35,7 +59,7 @@ print ("The Actual Value is     : ",1.099)
 # for our subplots
 plt.axis([0, 5, 0, 10])
 figure, axis = plt.subplots(2,2)
-
+axis[0, 0].set_title("((x+1)**-1)")
 #plot the random numbers in graph
 axis[0, 0].scatter(xlist, ylist, s=2)
 
@@ -70,14 +94,15 @@ for i in range (N):
 
 #Print out the calculation of the y value  using the random digits
 # print out the actual value
-# conclusion for this test case is the more number of values we have, approximately a .14 gap
+# conclusion for this test case is the more number 
+#of values we have, approximately a .14 gap
 print("\r\nTesing Case for (x^2)")
 print("====================================" )
 print ("Esimate of (x^2) is : ", 4*count/N)
 print ("The Actual Value is : ", 2.667)
 
 # for our subplots
-
+axis[0, 1].set_title("(x^2)")
 #plot the random numbers in graph
 axis[0, 1].scatter(xlist, ylist, s=2)
 
@@ -112,14 +137,15 @@ for i in range (N):
 
 #Print out the calculation of the y value  using the random digits
 # print out the actual value
-# conclusion for this test case is the more number of values we have, approximately a .14 gap
+# conclusion for this test case is the more number of 
+#values we have, approximately a .14 gap
 print("\r\nTesing Case for (x^4)")
 print("====================================" )
 print ("Esimate of (x^4) is : ", 8*count/N)
 print ("The Actual Value is : ",6.400 )
 
 # for our subplots
-
+axis[1, 0].set_title("(x^4)")
 #plot the random numbers in graph
 axis[1, 0].scatter(xlist, ylist, s=2)
 

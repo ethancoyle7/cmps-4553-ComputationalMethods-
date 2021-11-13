@@ -1,0 +1,20 @@
+Matplotlib created a temporary config/cache directory at 
+/tmp/matplotlib-aujqhdvh because the default path (/config/matplotlib) 
+is not a writable directory; it is highly recommended to set the
+MPLCONFIGDIR environment variable to a writable directory, in particular 
+to speed up the import of Matplotlib and to better support multiprocessing.
+
+Tesing Case for (x+1)**-1
+====================================
+Esimate of (x+1)**-1 is :  1.212
+The Actual Value is     :  1.099
+
+Tesing Case for (x^2)
+====================================
+Esimate of (x^2) is :  2.6872
+The Actual Value is :  2.667
+
+Tesing Case for (x^4)
+====================================
+Esimate of (x^4) is :  6.4224
+The Actual Value is :  6.4

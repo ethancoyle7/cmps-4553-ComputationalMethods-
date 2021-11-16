@@ -86,7 +86,7 @@ plt.ylim(0,2)
 # x^2 graph
 # reset values and empty the list and start again
 # next values 
-N = 5000
+N = 2000
 #initialize count of points inside
 count = 0
 #select good looking plot sorted
@@ -135,6 +135,7 @@ plt.ylim(0,2)
 # our next graph and start by resetting variables
 #initialize count of points inside
 count = 0
+N=5000
 # new list set to read the x and ys for appendage
 XList = np.empty((0, 0))
 YList = np.empty((0, 0))
@@ -171,6 +172,7 @@ plt.xlim(0,2)
 plt.ylim(0,2)
 # starting next case e^x
 #generate points and count inside
+N=6000
 count = 0
 ValueX = np.empty((0, 0))
 ValueY = np.empty((0, 0))

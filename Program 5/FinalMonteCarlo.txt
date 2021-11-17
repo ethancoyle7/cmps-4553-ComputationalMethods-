@@ -1,0 +1,20 @@
+Testing Case for (x+1)**-1
+====================================
+Esimate of (x+1)**-1 is  :  1.4464
+The Actual Value is      :  1.099
+
+Tesing Case for (x^2)
+====================================
+Esimate of x^2 is   :  2.964
+The Actual Value is :  2.667
+
+Tesing Case for (e^x)
+====================================
+Esimate of e^x is  :  5.7376
+The Actual Value is:  6.389
+
+Tesing Case for (x^4)
+====================================
+Esimate of x^4 is    :  6.416
+The Actual Value is  :  6.4
+ 

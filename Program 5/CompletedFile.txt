@@ -1,0 +1,62 @@
+================================================
+
+ FIRST WE WILL TESTING USING MONTE CARLO    
+
+================================================
+
+
+
+Testing Case for (x+1)**-1
+====================================
+Esimate of (x+1)^-1   :   1.1056
+Act. Value (x+1)^-1   :   1.099 
+
+
+Testing Case for (x**4)
+====================================
+Esimate of x^4        :   6.5408
+Act. Value of x^4     :   6.4 
+
+
+Testing Case for (x**2
+====================================
+Esimate of x^2        :   2.7696
+Act. Value of x^2     :   2.667 
+
+
+Tesing Case for (e^x)
+====================================
+Esimate of e^x        :   5.4144
+Act. Value of e^x     :   6.389 
+
+
+
+
+================================================
+
+ NOW WE ARE TESTING USING SIMSONS RULE      
+
+================================================
+
+
+
+Integral of f(x) = (x+1)^-1 on intvl [ 0 , 2 ]
+---------------------------------------------------
+The exact value of S.R. (x+1)^-1 is  :  1.099
+Our Calc. using S.R of  (x+1)^-1 is  :  1.231993931993932
+
+Integral of f(x) = (x^4) on intvl [ 0 , 2 ]
+---------------------------------------------------
+The exact value of S.R. x^4 is  :  6.400
+Our Calc. using S.R of  x^4 is  :  6.400426666666667
+
+Integral of f(x) = (x^2) on intvl [ 0 , 2 ]
+---------------------------------------------------
+The exact value of S.R. x^2 is  :  2.667
+Our Calc. using S.R of  x^2 is  :  2.6666666666666665
+
+Integral of f(x) = (e^x) on intvl [ 0 , 2 ]
+---------------------------------------------------
+The exact value of S.R. e^x is  :  6.389
+Our Calc. using S.R of  e^x is  :  6.522445954568723
+ 

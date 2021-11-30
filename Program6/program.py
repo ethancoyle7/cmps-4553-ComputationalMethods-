@@ -27,6 +27,9 @@ def GoModel(t,a,b):
   return a*(1-np.exp(-b*t))
   #a(1-e-bt)
 
+#extra credit yamada expression for srgn 2
+def Yamada(a,b,c,d,t):
+  return a*(1-np.exp(-b*c(1-np.exp(-d*t))))
 #extra credit yamada expression
 
 
@@ -84,7 +87,6 @@ print("Prediction For Go-Model on input 1 is : (", x_guess, ',', y_pred, ")")
 print("==================================================================\n")
 
 
-
 #plot the data
 
 plt.plot(xdata, GoModel(xdata, *popt), '-', label='Go Data')
@@ -130,7 +132,7 @@ print(popt)
 # upperbounds whatever is above
 
 # now to make predicted guess
-x_guess = 10 # intial guess
+x_guess = xdata[-1]+10 # intial guess
 # calculate the prediction for the Gos Model and output
 y_pred = GoSModel(x_guess, *popt)
 print("Prediction For GoSModel on input 2 is : (", x_guess, ',', y_pred, ")")

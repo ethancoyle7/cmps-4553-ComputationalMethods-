@@ -1,0 +1,11 @@
+Prediction For GoSModel on input 1 is : ( 28.0 , 215.93066513464817 )
+Prediction For Go-Model on input 1 is : ( 28.0 , 258.7586749578126 )
+==================================================================
+
+Prediction For GoSModel on input 2 is : ( 27.0 , 203.9999950738555 )
+Prediction For Go-Model on input 2 is : ( 27.0 , 203.98728500215205 )
+==================================================================
+
+Prediction For GoSModel on input 3 is : ( 23.0 , 82.87373136597024 )
+Prediction For Go-Model on input 3 is : ( 23.0 , 102.80328500941846 )
+==================================================================

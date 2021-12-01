@@ -1,35 +1,29 @@
-#=====================================#
-# Ethan Coyle                         #
-#Instructor- Dr. StringFellow         #
-#Class     - CMPS 4553- comp. Methods #
-#Assignment- Program 6                #
-#=====================================#
-#Your task is to determine the curve  #
-# fit for two models for each of the  #
-#three data files given. Plot the two #
-# fits for each file and print out a  #
-#statement that says which one is     #
-# better based on the fit             #
-#score.                               #
-# extra credit using yamada is on the #
-# bottom of the program.              #
-#=====================================#
-# User note-  the first portion of the#
-#   program is calculating using the  #
-#   Go and Go-s models and outputting #
-#   the predictions, the true values &#
-#   the calculated score with nice    #
-#   easy to read format and then      #
-#   compares the scores and plots     #
-#   the Yamada Expression which is the#
-#   extra credit. The output of the   #
-#   Yamada is based off of SRGM2 and  #
-#   turns out to be the most accurate #
-#   out of all the tests but the third#
-#   file the Go-s model is also almost#
-#   right on the dot for the extiates # 
-#   prediction                        #
-#=====================================#
+#============================================================#
+# Author   - Ethan Coyle                                     #
+#Instructor- Dr. StringFellow                                #
+#Class     - CMPS 4553- comp. Methods                        #
+#Assignment- Program 6                                       #
+#============================================================#
+#Your task is to determine the curve fit for two models for  #
+#each of the three data files given. Plot the two fits for   #
+#each file and print out a statement that says which one is  #
+# better based on the fit score.                             #
+#============================================================#
+# extra credit using yamada is on the                        #
+# bottom of the program.                                     #
+#============================================================#
+# User note-  the first portion of the program is calculating#
+#             using the Go and Go-s models and outputting    #
+#             the predictions, the true values & the         #
+#             calculated score with nice easy to read format #
+#             and then compares the scores and plots the     #
+#             Yamada Expression which is the# extra credit.  #
+#             The output of the Yamada is based off of SRGM2 #
+#             and turns out to be the most accurate out of   #
+#             all the tests but the third file the Go-s model#
+#             is also almost right on the dot for the        #
+#             extiates prediction                            #
+#============================================================#
 
 import numpy as np
 from scipy.optimize import curve_fit
@@ -50,7 +44,7 @@ def Yamada(t,a,bc,d):
 #extra credit yamada expression
 
 
-# create subplots 4 boxes to hold the cruve plots for best fit share the y and x axis
+# nicce style plot to use for graphs of plots
 matplotlib.style.use("ggplot")
 
 # read in the first file
@@ -292,7 +286,8 @@ if(GO_S_score[-1] >= GOScore[-1]):
 else:
     print("The Model with the best G-O Score  was:", GOScore[-1])
     print('The Predicted Score Value was         :',GOScore[0])
-print(" However, As we will see in a minute, running the Yamada, We get an even more accurate result with the prediction being almost spot on\n")
+print(" However, As we will see in a minute, the Yamada     ")
+print('We get the most accurate almost spot on value      \n")
 print("=====================================================")
 
 # for extra credit, we visualize the yamada and we see that 

@@ -14,6 +14,22 @@
 # extra credit using yamada is on the #
 # bottom of the program.              #
 #=====================================#
+# User note-  the first portion of the#
+#   program is calculating using the  #
+#   Go and Go-s models and outputting #
+#   the predictions, the true values &#
+#   the calculated score with nice    #
+#   easy to read format and then      #
+#   compares the scores and plots     #
+#   the Yamada Expression which is the#
+#   extra credit. The output of the   #
+#   Yamada is based off of SRGM2 and  #
+#   turns out to be the most accurate #
+#   out of all the tests but the third#
+#   file the Go-s model is also almost#
+#   right on the dot for the extiates # 
+#   prediction                        #
+#=====================================#
 
 import numpy as np
 from scipy.optimize import curve_fit
@@ -111,8 +127,7 @@ plt.savefig("plot1.pdf")
 # next data done with this
 # clear the data so can plot clean again
 plt.clf()
-plt.cla()
-plt.close()
+
 # now on for the second srgm file
 
 
@@ -194,8 +209,7 @@ plt.savefig("plot2.pdf")
 # next data done with this
 # clear the data so can plot clean again
 plt.clf()
-plt.cla()
-plt.close()
+
 
 # now for the third input file
 my_data = np.genfromtxt('srgm3.txt', delimiter='')
@@ -270,8 +284,7 @@ plt.savefig("plot3.pdf")
 # next data done with this
 # clear the data so can plot clean again
 plt.clf()
-plt.cla()
-plt.close()
+
 # for score compariosn
 if(GO_S_score[-1] >= GOScore[-1]):
     print("The Model with the best GOS Score was :",GO_S_score[-1])
@@ -301,4 +314,10 @@ y_pred = Yamada(x_guess, *popt)
 print("From Input 2, The Yamada Model Prediction was : (", x_guess, ',', y_pred, ")")
 plt.plot(xdata, Yamada(xdata, *popt), '-', label='Yamada')
 plt.scatter ([x_guess], [y_pred], color = 'Lime')
+
+plt.plot(xdata, ydata, 'bo', label='data')
+plt.title("Yamada Expression")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend() # legend for better understanding
 plt.savefig("Yamada.pdf")
